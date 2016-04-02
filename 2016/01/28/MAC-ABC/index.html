@@ -1,0 +1,809 @@
+<!doctype html>
+<html class="theme-next   use-motion ">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="羊蹄甲计划," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="和风" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.4.5.2" />
+
+
+
+
+
+
+<meta name="description" content="你知道这是什么，对吧。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="电磁炮设计新手教程">
+<meta property="og:url" content="http://yoursite.com/2016/01/28/MAC-ABC/index.html">
+<meta property="og:site_name" content="和风">
+<meta property="og:description" content="你知道这是什么，对吧。">
+<meta property="og:image" content="http://yoursite.com/img/gaussgun.jpg">
+<meta property="og:image" content="http://yoursite.com/img/zhengliuqiao-1.png">
+<meta property="og:image" content="http://yoursite.com/img/zhengliuqiao-2.png">
+<meta property="og:image" content="http://yoursite.com/img/coils.jpg">
+<meta property="og:updated_time" content="2016-04-02T05:02:37.204Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="电磁炮设计新手教程">
+<meta name="twitter:description" content="你知道这是什么，对吧。">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'post',
+    motion: true
+  };
+</script>
+
+  <title> 电磁炮设计新手教程 | 和风 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+  
+
+
+
+
+
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">和风</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <form class="site-search-form">
+    <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+  </form>
+
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'pDTkSUqs7WcdbxT7dLie','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                电磁炮设计新手教程
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-01-28T18:46:10+08:00" content="2016-01-28">
+              2016-01-28
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/28/MAC-ABC/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/28/MAC-ABC/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>你知道这是什么，对吧。<br><img src="/img/gaussgun.jpg" alt="gaussgun"><br><a id="more"></a></p>
+<h2 id="WTF_3F"><a href="#WTF_3F" class="headerlink" title="WTF?"></a>WTF?</h2><p>本文为电磁炮设计新手教程，原文来自被封已久的<a href="http://tieba.baidu.com/f?ie=utf-8&amp;kw=%E7%94%B5%E7%A3%81%E7%82%AE" target="_blank" rel="external">炮吧</a><sup>[1]</sup>加上我大脑的精华浓缩而成本文。<br>原文作者：百度用户<a href="http://tieba.baidu.com/home/main?un=wsyxc1997" target="_blank" rel="external">@wsyxc1997</a></p>
+<p>这篇文章写给那些刚开始接触电磁炮什么都不知道的零基础的各位新人，本篇教程尽量不出现各种高深的长篇的理论性的东西，将用最简单<del>粗暴</del>的语言介绍初级线圈炮的一些知识。<br>如果你要阅读本文，请务必要耐心看完全文，切勿断章取义！<br>致<strong>熊孩子</strong>：如果你是初中生、小学生或者你只是抱着玩和为了装逼的心态点开本文寻找方法，这往往会造成灾难性的后果。不建议你制作此类电子制作，因为你的知识压根不足以支持你能够通彻的理解本文。<br>本文仅作为参考材料留作个人备份（PlanWFJ，王府井备份计划），具体情况请具体分析自行判断！</p>
+<h2 id="u539F_u7406"><a href="#u539F_u7406" class="headerlink" title="原理"></a>原理</h2><p>电磁炮（The Magnetic Accelerator Cannon 或 Electromagnetic Gun）可以分为线圈炮、轨道炮、电热炮、重接炮<br>这里主要讲的是普通的一级加速的磁阻式线圈炮</p>
+<p>整个炮由充电回路，电容，发射回路三部分构成，工作流程是：<br>电源给充电回路供电 —— 充电回路给电容充电 —— 电容给发射回路放电 —— 发射回路发射子弹<br>简单来说就是 <strong>充电</strong> –&gt; <strong>放电</strong> –&gt; <strong>发射！</strong></p>
+<p>那么讲一下这么设计的原因，我们之所以不直接给发射回路提供电，是因为我们的发射回路，也就是线圈在发射时需要给一个十分短暂，而且高电压的电流（脉冲电流），因为通电中的线圈会因为电磁感应现象产生磁阻变化，从而吸引铁质的子弹运动，吸引子弹前进，当子弹通过线圈重的磁力中点时，给子弹提供动力的磁力会造成反向拉力，使子弹向发射方向相反的方向运动，造成<strong>反拉</strong>现象，所以我们在设计中通过给电容充电，再由电容提供一个瞬间的高压电流给线圈，在铁质子弹经过磁场中点后，由于电流逐渐减弱至消失，并不会造成严重的反拉现象。 </p>
+<p>当然这种设计不是唯一的。</p>
+<h2 id="u5145_u7535_u56DE_u8DEF"><a href="#u5145_u7535_u56DE_u8DEF" class="headerlink" title="充电回路"></a>充电回路</h2><p>目前我们主要使用市电（220V）充电和蓄电池充电两种方法给电容充电。</p>
+<h3 id="u5E02_u7535_u5145_u7535"><a href="#u5E02_u7535_u5145_u7535" class="headerlink" title="市电充电"></a>市电充电</h3><p>市电是用普通家庭220V的交流电作为电源给电容充电。</p>
+<p>优点：方便多次射击，插上插座即可给电容充电<br>缺点：<strong>危险！</strong>不小心的话可能致命！<strong>不建议新手尝试此方法充电</strong>，并且这种充电方法具有空间限制，只能在有插座的地方才能使用。 </p>
+<p>充电设计：市电转直流电<strong>（整流）</strong>—— 直流电增压 —— 给电容充电 </p>
+<p>市电是交流电，不能直接给电容充电，需要运用整流桥（桥式整流，由四个二极管搭建）把交流电转为直流电，再通过增压给电容充电，增压方法在蓄电池充电里会有详解。</p>
+<blockquote>
+<p>不增压也行，那么就直接玩220V，实际上峰值可达到约310 V.</p>
+</blockquote>
+<p>取310V的缘由<sup>[2]</sup>：</p>
+<p>$$U_{max}=\sqrt{2}U=220\sqrt{2}V$$</p>
+<p>我们一般取<br>$$\sqrt{2} \approx 1.41 $$<br>得到<br>$$ U_{max} = 220V\times 1.41 = 310.2V $$<br>这就是为什么最大峰值取310V .</p>
+<p>没错这就是整流桥的样子：<br><img src="/img/zhengliuqiao-1.png" alt="整流桥-1"><br><img src="/img/zhengliuqiao-2.png" alt="整流桥-2"></p>
+<h3 id="u84C4_u7535_u6C60_u5145_u7535"><a href="#u84C4_u7535_u6C60_u5145_u7535" class="headerlink" title="蓄电池充电"></a>蓄电池充电</h3><p>蓄电池是利用大容量的蓄电池给电容充电<br>优点：安全，不受空间限制，可以制作成手持型移动电磁炮，并且天生直流电无需整流。<br>缺点：需要有一块蓄电池，并且不能支持多次射击。 </p>
+<p>充电设计：蓄电池 —— 增压 —— 给电容充电 </p>
+<p>蓄电池初始电压很低（一般只有12V左右）需要增压才能给电容充电，这里解释一下为什么不论是蓄电池还是市电都要增压才能给电容充电，因为电容的充电电压最高只能冲到提供的电源电压，也就是说假如充电回路只能给电容提供一个12V的电流，那么不论你的电容最高耐压是多少V，它只能冲到12V，而我们发射的电磁炮一般其电压都在220V以上，所以需要利用变压或者增压原件来给初始电压增压，如果你做的电磁炮射击电压不高于你的电源电压，那么就可以省略增压部分，增压的方法是使用ZVS等增压模块变压（我<sup>[3]</sup>用的DC-DC，<a href="http://www.baidu.com/#ie=UTF-8&amp;wd=DC-DC" target="_blank" rel="external">百度一下</a>）ZVS等增压设备具体的使用方法在贴吧里有我不做解释。 </p>
+<p>总结：不论是市电还是蓄电池其充电回路的作用就是给电容提供一个稳定的高压的电源给其充电，其他充电的方法很多，可以自己尝试去做，不一定非要局限于这里提供的两种方法。</p>
+<h2 id="u7535_u5BB9"><a href="#u7535_u5BB9" class="headerlink" title="电容"></a>电容</h2><p><strong>电容器</strong>就是一种可以储存电流的类似电池的一种常用的电子元件，具体请<a href="https://www.baidu.com/s?ie=UTF-8&amp;wd=%E7%94%B5%E5%AE%B9%E5%99%A8" target="_blank" rel="external">百度</a>，电容是整个电磁炮的心脏部分，由它给线圈提供一个瞬间的强大电流，这里我主要讲解一下电容的选择和实际接入问题 </p>
+<p>首先是电容的选择，电容的种类还是比较多的，我们常用的电容是电解电容，电容的外貌也非常杂乱，一般会随着容量和耐压的变化而变化，电容的属性主要是两个参数，即最高耐压和电容容量，前者单位是V后者单位是μf<br>（一些比较变态的电容也会用KV做耐压单位，μf读作微法，是电容容量的单位，另外还有F、pF等单位）</p>
+<p>电容的耐压和容量<strong>直接决定了你电炮的威力</strong>。</p>
+<p>电容耐压V的高低是决定你电炮威力的重要参数，理论上电压（电流）越大威力越大（这只是理论上的，实际上电炮威力跟发射回路的线圈等许多东西有联系，这里是指在其他一切条件不发生变化的情况下电压越高，电炮子弹出膛速度就会越快）当然你要考虑你的其他电子元件是否能接受这么大的电压（<strong>保证电路安全</strong>）！这点切记，一些比较脆弱的电子元件会被高电压电流烧掉！！而且电压很高会非常危险！！第一次尝试电炮的同学们不要动辄上千V的电容做电炮！一般300V左右的一级加速线圈炮的射速就能达到20m/s左右（做得好上升空间很充足）具体电压高低和射速等参数可以通过线圈炮模拟器尝试，待会会附上下载链接。<br>另一个属性电容的容量μf则决定了电容能储存多少电能，μf也不是越高越好的！过大的μf容量会导致电容给线圈放电时间过长，会使前面提到过的反拉现象十分严重！当然也不能太小，不然你连钢针都发射不出去，一般你要发射的子弹质量体积越大，所需要的μf可以适当提高，像400V左右的电容如果射钢钉的话，1000μf左右的容量就足够了！具体参数根据你想做的炮的具体参数自行设计，同样在模拟器里可以自己尝试的设计！ </p>
+<p>根据你想做的电磁炮的威力大小，子弹的种类等合理的选择电容，千万不要盲目的去够买电容，另外提示新人，越便宜的电容质量会越差！容量越高，耐压越大的电容会越贵！千万不要贪图小便宜，毕竟<strong>安全第一</strong>！质量差的电容会导致电容耐压跟要求不符合！另外提示所谓的拆机电容就是二手电容，一般会比新电容便宜许多。 </p>
+<h3 id="u6B63_u786E_u63A5_u6CD5"><a href="#u6B63_u786E_u63A5_u6CD5" class="headerlink" title="正确接法"></a>正确接法</h3><p><strong>关乎生死：在接入电容之前一定要确定好电容的正负极！接反的话可能导致短路甚至电容爆炸！</strong>一般买回来的电容都是柱状体上方有两个焊接用的针脚，焊脚边上会有+，-正负提示（这里注意电磁炮里用到的所有电子元件都必须是有焊脚的，千万别买贴片系列的电子元件！）如果没有标注在柱状电容外壳会有一道<strong>白线</strong>连着一个针脚是负极，<strong>以防万一最好使用万用表测量一下电容（测量方法在后面万用表使用手册里会提到）以判断正负两极</strong>，另外还有电容的串联和并联，在一些视频上大家经常看一些高端玩家把大量电容串联或者并联起来，对于广大新手朋友们来说串联并联电容对你们意义不大，只需要一次性买对电容就好了。<br>另外电容可以看作绝缘物体但在<strong>充电后千万不要尝试去用手接触电容，任何电气元件都是这样！</strong></p>
+<p>电容接入，就是把充电回路连接到电容，即增压后的电源+-极接入电容+-极，再把电容+-极接入发射回路+-极，期间需要两个开关，一个控制电源给电容充电，这时候电容连接发射回路的开关要切断，另一个控制电容到发射回路，电容充满电后，切断电源到电容的开关，打开电容到发射回路的开关（相当于发射按钮，手枪的扳机）至于开关的详细使用方法和注意事项在后期开关详情里会做介绍。 </p>
+<h3 id="u5145_u7535_u9650_u6D41"><a href="#u5145_u7535_u9650_u6D41" class="headerlink" title="充电限流"></a>充电限流</h3><blockquote>
+<p>市电充电时由于大电解刚开始充电时电流非常大，可以看作大的像短路，所以要给充电电路进行限流。方法很多，因为电流大时相应阻抗也大，可以在整流桥输入端串联一个灯泡。当然还有其它更好的办法，比如串联一个10μF到20μF的空调电容，或者串联一个100mH左右的电感等</p>
+</blockquote>
+<p> —— 摘自<a href="http://bbs.kechuang.org/" target="_blank" rel="external">科创论坛</a></p>
+<h3 id="u786E_u5B9A_u7535_u5BB9_u5DF2_u5145_u9971_u7535"><a href="#u786E_u5B9A_u7535_u5BB9_u5DF2_u5145_u9971_u7535" class="headerlink" title="确定电容已充饱电"></a>确定电容已充饱电</h3><p>确定电容是否充满最简单的方法就是电容上接着电压表，时刻测量电容的电压，在最大耐压前停止充电。<br><strong>注  意  安  全</strong></p>
+<p>总结：电容就是整个电磁炮的动力来源，它决定了电磁炮的规格，同样一定要注意电容的选择和使用，电容可不是个安全的东西。</p>
+<h2 id="u53D1_u5C04_u56DE_u8DEF"><a href="#u53D1_u5C04_u56DE_u8DEF" class="headerlink" title="发射回路"></a>发射回路</h2><p>发射回路主要由线圈和炮管两大部分构成</p>
+<h3 id="u7EBF_u5708"><a href="#u7EBF_u5708" class="headerlink" title="线圈"></a>线圈</h3><p>线圈是一门磁阻式线圈炮的最重要的部分，它提供了电磁炮炮弹的发射动力，相当于巨炮的火药！是整个电磁炮的核心！<br>磁阻式线圈的炮线圈运用的是电磁感应原理，当线圈通电时相当于产生了一块电磁铁，它把炮管里的铁质炮弹吸引加速发射出去。 </p>
+<p>首先是线圈的制作方法：<br>我们一般使用漆包线缠绕线圈（<strong>千万别直接用电线！</strong>）所谓漆包线又叫包漆铜线，是一种相当于没有外皮绝缘层的电线，有很多不同直径的线可以选择，线的直径也是影响电磁炮威力的因素之一，具体漆包线的直径可以在模拟器里尝试设计，我们需要把线圈像绕毛线一样一圈一圈的绕在炮管上，这里注意我们要一层一层的缠绕，第一层全部缠绕完了再缠绕第二层，所有线缠绕的方向都是一致的，线和线之间需要很紧密的绕在一起，绕出来一层具体就如同按紧的弹簧那样，具体操作见如图所示<br><img src="/img/coils.jpg" alt="Coils"><center>图片源于<a href="http://bbs.kechuang.org/" target="_blank" rel="external">科创论坛</a></center></p>
+<p>图上所示第一个是发射用的空心管，也就是炮管。</p>
+<p>第二个是准备好漆包线后将一头留出抽头并固定于空心管上，留出的那一截是为了和电容连接的，固定方法可以考虑用快速方便的502胶水。 箭头的方向是绕线的方向。</p>
+<p>第三个是将第一层绕完后的情况，实际情况下线圈的密度会比这个要大的多，就是一条挨着一条而且其间没有缝隙，而且由于绕制的紧密往往带有预应力（不懂请百科），绕完一层后建议使用胶水固定一下，以防松动了要返工。</p>
+<p>然后第四个图则是重点，为了区分开第二层将颜色换成了红色，虚线部分是空心管背面的情况。请注意红色的箭头方向依然是与黑色箭头同向——没错，你没看错，就是以同样的方向继续绕线并折返回去，千万不要让“红色”的箭头以相反的方向绕线了，因为这样磁场的方向会改变，造成磁场的互相抵消，自然就没法发射了。</p>
+<p>需要注意的是除了用胶水固定以外，建议使用硬卡纸，塑料片甚至有机玻璃板预先开孔并在空心管，也就是炮管的两头固定住，以留出一个线圈绕线的范围，这样不但能够使绕线过程更加容易，还可以加大空间的利用率，使线圈的磁场更强。<br>有很多绕线的小技巧等待各位大神们去补充<br>缠绕线是最破烦的一件事，不大的一个线圈需要你缠绕好久好久，请一定耐心仔细的缠绕，千万要注意缠绕线的方向，不论绕到多少层一定要保证方向一致，比如你如果你用炮口对着你，如果是顺时针绕，就一直顺时针绕，逆时针绕就一直逆时针绕。<br>接下来线圈的具体规格，线圈的总长度，层数等都可以通过模拟器计算，这里不详细介绍。 </p>
+<p>一般来说线圈<strong>不是绕越长，层数越多越好</strong>，通过模拟器自行设计数据。 </p>
+<p>线圈注意事项，每一条线圈之间不要存在隔断，每一层线圈之间也不要存在隔断，都是直接漆包线精密相连，另外注意线圈在接电容的时候务必在线圈上反向并联二极管作为保护，防止电流反向击穿（具体可以见设计图纸电路图）</p>
+<h3 id="u70AE_u7BA1"><a href="#u70AE_u7BA1" class="headerlink" title="炮管"></a>炮管</h3><p>线圈是缠绕在炮管上的，炮管选择中空圆柱体，可以使用PVC管、亚克力管等…注意千万不要使用任何导电的材质做炮管，比如铁管等，另外炮管的管壁厚度不要过厚，炮管的尺寸尽量跟你想要射的子弹对应，炮管的内壁直径不要超出子弹直径太多。 </p>
+<p>总结：发射回路就是整个电磁炮的核心，线圈直接觉定你炮的威力，也是子弹动力的直接来源，务必重视发射回路。</p>
+<h2 id="u5176_u4ED6"><a href="#u5176_u4ED6" class="headerlink" title="其他"></a>其他</h2><p>三个重要的模块讲解完成相信各位对电磁炮的基础设计理念有了一定的理解下面介绍一些杂碎的东西： </p>
+<h3 id="u5B50_u5F39_u4E0E_u5F00_u5173"><a href="#u5B50_u5F39_u4E0E_u5F00_u5173" class="headerlink" title="子弹与开关"></a>子弹与开关</h3><p>子弹：目前大到钢筋小到钢珠，钢钉什么的都可以作为子弹（至于硬币…），这里注意子弹一定要是磁铁可以吸引的材质才可以，并且子弹一定要是流线型减少空气阻力，钢钉什么的一定要剪掉尾部，另外子弹的质量体积长度宽度直径等参数都是影响电磁炮威力的重要因素，在模拟器里一定要确定好自己的子弹种类。 </p>
+<p>开关：电源给电容充电的时候一般使用空气开关控制，注意空气开关的型号一定要和你电源增压后提供的电压适应，以防万一，比如电源增压后为500V空气开关一定要是500V以上的型号。而电容到发射回路即线圈的开关最好要用可控硅控制，如果电压高时不但会产生巨大的电火花烧坏开关触点，还会将大部分的能量都浪费在上面，所以我们用可控硅这种低电压低电流控制高电压高电流，只需要普通的开关就好了，但是可控硅的规格一定要耐受的住你的电容提供的电压和电流，不然会烧掉，可控硅的具体用法可以百度一下（<strong>当然你不能仅限于这个不怎么靠谱的“百度一下”</strong>）。</p>
+<h3 id="u539F_u6750_u6599_u7684_u8D2D_u4E70"><a href="#u539F_u6750_u6599_u7684_u8D2D_u4E70" class="headerlink" title="原材料的购买"></a>原材料的购买</h3><p>设计好后可以直接在当地销售电子元件的地方买，也可以直接上淘宝，不知道具体型号的可以直接把参数提供给老板问他们。注意买的所有元件都是可焊接有焊脚的那种，千万不要买贴片型的。 </p>
+<blockquote>
+<p>炮吧吧主淘宝店：<a href="https://solenoid.taobao.com/" target="_blank" rel="external">https://solenoid.taobao.com/</a></p>
+</blockquote>
+<h3 id="u7EC4_u88C5_u3001_u710A_u63A5_u3001_u4E07_u80FD_u8868_u7684_u7528_u6CD5"><a href="#u7EC4_u88C5_u3001_u710A_u63A5_u3001_u4E07_u80FD_u8868_u7684_u7528_u6CD5" class="headerlink" title="组装、焊接、万能表的用法"></a>组装、焊接、万能表的用法</h3><p>组装电磁炮主要通过电烙铁进行焊接，电烙铁还有焊接法什么的网上都有教程，万能表的用法也是，可以自行百度。</p>
+<h2 id="u7EBF_u5708_u70AE_u6A21_u62DF_u5668"><a href="#u7EBF_u5708_u70AE_u6A21_u62DF_u5668" class="headerlink" title="线圈炮模拟器"></a>线圈炮模拟器</h2><p>无毒，担心有毒请放置沙箱环境或虚拟机中运行。<br>内附有Win7运行错误修复软件</p>
+<blockquote>
+<p>线圈炮模拟器.zip<br>MD5     ：B4D05922297CBB45A7B7F447E9474359<br>SHA1    ：8C6554FBC40DB017C5E0A8F2012602258D8DC368<br>CRC32   ：B3E6FF28</p>
+<p>线圈炮计算汉化.exe<br>MD5     ：9DEB206C00C0333E845D1BC5AB9D6025<br>SHA1    ：C71374DCD5B70B58B557BCAEBAE0B24AEFE1D68D<br>CRC32   ：97F3E1A4</p>
+</blockquote>
+<p><a href="/files/线圈炮模拟器.zip">点击下载</a></p>
+<h2 id="u5173_u4E4E_u751F_u6B7B_u7684_u6CE8_u610F_u4E8B_u9879"><a href="#u5173_u4E4E_u751F_u6B7B_u7684_u6CE8_u610F_u4E8B_u9879" class="headerlink" title="关乎生死的注意事项"></a>关乎生死的注意事项</h2><p>本文主要介绍的是原理以及如何设计，所以在实际实施的过程中请如实遵守以下约定：<br>1.安全第一，先考虑安全<br>2.各处要做好绝缘措施<br>3.注意有极元件的正负极是否接正确<br>4.具体设计一定要遵照具体设计的标准<sup>[4]</sup></p>
+<h2 id="u672C_u6587_u52D8_u8BEF"><a href="#u672C_u6587_u52D8_u8BEF" class="headerlink" title="本文勘误"></a>本文勘误</h2><p>如在阅读过程中发现有错误，请及时向我反馈<br>邮箱：<code>Ymlhb2lhb29AZ21haWwuY29t</code>（BASE64加密）</p>
+<h2 id="u5F15_u7528_u53C2_u8003"><a href="#u5F15_u7528_u53C2_u8003" class="headerlink" title="引用参考"></a>引用参考</h2><p>[1] 电磁炮吧 - 百度贴吧，由于“相关法律法规和政策”，本吧暂不开放。<br>[2] 公式取自：哈尔滨工业大学电子学教研室, 数字电子技术网络课程 - ①输出电压平均值UO(AV) -  (14-1-5). <a href="http://hitjpkc.hit.edu.cn/elec/JS/js08/mold/moni/CHAP14/14-1/1.htm" target="_blank" rel="external">http://hitjpkc.hit.edu.cn/elec/JS/js08/mold/moni/CHAP14/14-1/1.htm</a><br>[3] 百度用户<a href="http://tieba.baidu.com/home/main?un=wsyxc1997" target="_blank" rel="external">@wsyxc1997</a><br>[4] 这会在设计中具体给出，如“只能增加电容而不能增加线圈匝数”</p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/羊蹄甲计划/" rel="tag">#羊蹄甲计划</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/01/09/markdown/" rel="next" title="Markdown 简明语法">
+                <i class="fa fa-chevron-left"></i> Markdown 简明语法
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+        </div>
+
+        
+
+
+        
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/01/28/MAC-ABC/"
+           data-title="电磁炮设计新手教程" data-url="http://yoursite.com/2016/01/28/MAC-ABC/">
+      </div>
+    
+  </div>
+
+
+      </div>
+
+      
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="http://7xn2f4.com1.z0.glb.clouddn.com/avatar_iaoo.jpg" alt="Zephyr" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">Zephyr</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">这个人很聪明，什么也没有留下。</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="/about" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> E-mail
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">Links</p>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.anotherhome.net" target="_blank">DIYgod</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://eerie.ml" target="_blank">Tech Blog</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://we-are-watching-you.ml" target="_blank">NetSecurity</a>
+              </span>
+            
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#WTF_3F"><span class="nav-number">1.</span> <span class="nav-text">WTF?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u539F_u7406"><span class="nav-number">2.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5145_u7535_u56DE_u8DEF"><span class="nav-number">3.</span> <span class="nav-text">充电回路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5E02_u7535_u5145_u7535"><span class="nav-number">3.1.</span> <span class="nav-text">市电充电</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u84C4_u7535_u6C60_u5145_u7535"><span class="nav-number">3.2.</span> <span class="nav-text">蓄电池充电</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7535_u5BB9"><span class="nav-number">4.</span> <span class="nav-text">电容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u6B63_u786E_u63A5_u6CD5"><span class="nav-number">4.1.</span> <span class="nav-text">正确接法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5145_u7535_u9650_u6D41"><span class="nav-number">4.2.</span> <span class="nav-text">充电限流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u786E_u5B9A_u7535_u5BB9_u5DF2_u5145_u9971_u7535"><span class="nav-number">4.3.</span> <span class="nav-text">确定电容已充饱电</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u53D1_u5C04_u56DE_u8DEF"><span class="nav-number">5.</span> <span class="nav-text">发射回路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u7EBF_u5708"><span class="nav-number">5.1.</span> <span class="nav-text">线圈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u70AE_u7BA1"><span class="nav-number">5.2.</span> <span class="nav-text">炮管</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5176_u4ED6"><span class="nav-number">6.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B50_u5F39_u4E0E_u5F00_u5173"><span class="nav-number">6.1.</span> <span class="nav-text">子弹与开关</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u539F_u6750_u6599_u7684_u8D2D_u4E70"><span class="nav-number">6.2.</span> <span class="nav-text">原材料的购买</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7EC4_u88C5_u3001_u710A_u63A5_u3001_u4E07_u80FD_u8868_u7684_u7528_u6CD5"><span class="nav-number">6.3.</span> <span class="nav-text">组装、焊接、万能表的用法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7EBF_u5708_u70AE_u6A21_u62DF_u5668"><span class="nav-number">7.</span> <span class="nav-text">线圈炮模拟器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5173_u4E4E_u751F_u6B7B_u7684_u6CE8_u610F_u4E8B_u9879"><span class="nav-number">8.</span> <span class="nav-text">关乎生死的注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u672C_u6587_u52D8_u8BEF"><span class="nav-number">9.</span> <span class="nav-text">本文勘误</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5F15_u7528_u53C2_u8003"><span class="nav-number">10.</span> <span class="nav-text">引用参考</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+      
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zephyr</span>
+</div>
+
+<div class="retoof">
+ <img src="http://assets.qiniu.com/qiniu-125x55.png">
+ <div style="display:none"><script src="http://s11.cnzz.com/z_stat.php?id=1257395003&web_id=1257395003" language="JavaScript"></script></div>
+</div>
+<!--<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>-->
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"iaoo"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+
+
+    
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.5.2"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.5.2"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+<script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+<script type="text/javascript" src="/js/motion.js?v=0.4.5.2" id="motion.global"></script>
+
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.5.2" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    motionMiddleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+
+  
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3.0/MathJax.js?config=TeX-AMS-MML_SVG"></script>
+    <script src="/cdn/mathjax/config/TeX-AMS-MML_SVG.js"></script>
+  
+
+
+  
+  
+
+</body>
+</html>
